@@ -1,0 +1,14 @@
+
+
+
+<div class="portfolio" ng-controller="PortCtrl">
+  <form action="">
+    <input type="text" ng-model="portfolio.filter">
+  </form>
+
+  <div ng-repeat="item in items | filter:portfolio.filter track by $index">
+    <h2>{{item.title}}</h2>
+    <img ng-src="{{item.src}}" alt="">
+  </div>
+</div>
+

@@ -1,0 +1,12 @@
+<h1>Biz Name</h1>
+<form ng-controller="MainCtrl">
+    <div class="form-group">
+        <input class="form-control" ng-model="contact.subject" placeholder='Subject' type="text">
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" ng-model="contact.body" placeholder='Your message'></textarea>
+    </div>
+    <a class="btn btn-success" ng-href="mailto:anything@studio.com?subject={{encodeString(contact.subject)}}&amp;body={{encodeString(contact.body)}}">
+            Send
+          </a>
+</form>

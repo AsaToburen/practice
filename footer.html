@@ -1,0 +1,23 @@
+<footer ng-controller="FooterCtrl">
+    <div>
+        <ul>
+            <li ng-click="tabName=1">One</li>
+            <li ng-click="tabName=2">Two</li>
+            <li ng-click="tabName=3">Three</li>
+        </ul>
+    </div>
+    <div ng-switch on="tabName">
+        <div ng-switch-when="1">
+            <h2>This is the data that is exposed by tab 1.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi doloremque, excepturi nisi facere delectus tempore perspiciatis ut dignissimos reiciendis iste, reprehenderit dolores quas natus saepe consectetur numquam fugiat unde! Expedita.</p>
+        </div>
+        <div ng-switch-when="2">
+            <h2>This is the data that is exposed by tab 2.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi doloremque, excepturi nisi facere delectus tempore perspiciatis ut dignissimos reiciendis iste, reprehenderit dolores quas natus saepe consectetur numquam fugiat unde! Expedita.</p>
+        </div>
+        <div ng-switch-when="3">
+            <h2>This is the data that is exposed by tab 3.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi doloremque, excepturi nisi facere delectus tempore perspiciatis ut dignissimos reiciendis iste, reprehenderit dolores quas natus saepe consectetur numquam fugiat unde! Expedita.</p>
+        </div>
+    </div>
+</footer>
